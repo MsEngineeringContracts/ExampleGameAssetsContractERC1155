@@ -13,7 +13,6 @@ Hosted metadata according to previous examples.
 There are 11 predefined items. The currency, 5 rarities of game asset and 5 rarities of token. 
 
 ### Pricing
-
 The values defined are just an example to represent some ideas of mechanics in the game asset. Further the resulting price adjustment functions are not implemented yet. These steps will follow after game contract creation.
 
 | Variable | About | Value |
@@ -23,3 +22,5 @@ The values defined are just an example to represent some ideas of mechanics in t
 | _CashPerAsset | The number of cash to pay (and/or burn), to mint a random asset. | 100 |
 | _CashPerAssetFee | The number of cash to pay to the owner, to mint a random asset. | 10 |
 | _FusionAssetDefaultCharge | The number of assets to mint when fusioning an asset. | 10 |
+
+### Modifier
