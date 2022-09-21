@@ -3,7 +3,7 @@ Example game asset contract with in game currency, buy function, rartity based s
 
 ## Requirements
 ### Require 00
-A contract workspance according to previous examples.
+A contract workspace according to previous examples.
 
 ### Require 01
 Hosted metadata according to previous examples.
