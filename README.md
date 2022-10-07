@@ -90,6 +90,12 @@ The following modifiers are implemented:
 
 ### Mint with native
 
+![ScreenShot](/img/TestGfnIcoDice_TX_MintWithNative.PNG)
+
 ### Mint with cash
 
+![ScreenShot](/img/TestGfnIcoDice_TX_MintWithCash.PNG)
+
 ### Mint with fragment
+
+![ScreenShot](/img/TestGfnIcoDice_TX_MintWithFragments.PNG)
