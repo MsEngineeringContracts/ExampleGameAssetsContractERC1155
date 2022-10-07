@@ -50,4 +50,12 @@ The following modifiers are implemented:
 | Name | Params | Modifier | Fuction | 
 | --- | --- | --- |--- |
 | setBaseStatsURI | string _newURI | onlyOwner | Set URI to basic stats values |
-| setBaseStatsURI | string _newURI | onlyOwner | Set URI to basic stats values |
+| setURI | string _newURI | onlyOwner | Set general token URI |
+
+### Reading functions
+
+| Name | Params | Modifier | Fuction | 
+| --- | --- | --- |--- |
+| getStatsURI | uint256 _tokenRarity | isAsset | Get URI to basic stats values |
+| getURI | string _newURI |   | Get general token URI |
+| tokenURI | uint256 _qId |   | Get general token URI |
