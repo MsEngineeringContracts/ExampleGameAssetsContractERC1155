@@ -80,3 +80,14 @@ The following modifiers are implemented:
 | --- | --- | --- | --- |
 | _createRandomNum | uint256 _mod |   | Returns random number in the specified mod range |
 | burn | address from, uint256 id, uint256 amount |   | Returns random number in the specified mod range |
+
+## Proof of functionality
+### Contract Creation
+
+### Metadata and statsURI
+
+### Mint with native
+
+### Mint with cash
+
+### Mint with fragment
