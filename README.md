@@ -84,6 +84,8 @@ The following modifiers are implemented:
 ## Proof of functionality
 ### Contract Creation
 
+![ScreenShot](/img/TestGfnIcoDice_TX_ContractCreation.PNG)
+
 ### Metadata and statsURI
 
 ### Mint with native
