@@ -88,6 +88,8 @@ The following modifiers are implemented:
 
 ### Metadata and statsURI
 
+![ScreenShot](/img/TestGfnIcoDice_StatsURI.PNG)
+
 ### Mint with native
 
 ![ScreenShot](/img/TestGfnIcoDice_TX_MintWithNative.PNG)
