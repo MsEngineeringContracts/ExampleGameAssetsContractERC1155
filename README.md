@@ -131,3 +131,13 @@ Mint by sending the fee in ether directly to the contract:
 ![ScreenShot](/img/TestGfnIcoDice_TX_MintWithEtherTransaction.PNG)
 
 ![ScreenShot](/img/TestGfnIcoDice_TXdetails_MintWithEtherTransaction.PNG)
+
+### Withdraw
+
+Enter 0 in the payable field when calling withdraw function:
+
+![ScreenShot](/img/TestGfnIcoDice_Call_Withdraw.PNG)
+
+The collected ether will be send to the contract owner:
+
+![ScreenShot](/img/TestGfnIcoDice_TXdetails_Withdraw.PNG)
