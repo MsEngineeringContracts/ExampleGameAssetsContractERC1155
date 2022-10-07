@@ -19,9 +19,8 @@ The values defined are just an example to represent some ideas of mechanics in t
 | --- | --- | --- |
 | _FeePerAsset | The price in native curreny to pay mint a single asset. | 0.001 ether |
 | _FragmentsPerAsset | The number of fragments to burn, to mint a defined rarity with default charge. | 100 |
-| _CashPerAsset | The number of cash to pay (and/or burn), to mint a random asset. | 100 |
+| _CashPerAssetToBurn | The number of cash to burn, to mint a random asset. | 100 |
 | _CashPerAssetFee | The number of cash to pay to the owner, to mint a random asset. | 10 |
-| _FusionAssetDefaultCharge | The number of assets to mint when fusioning an asset. | 10 |
 
 ### Modifier
 The following modifiers are implemented:
@@ -29,15 +28,12 @@ The following modifiers are implemented:
 | Name | Calls | Requirements | 
 | --- | --- | --- |
 | mintNativeCompliance | mintWithNative | Message value lower than sender balance |
-|   |   | Mint amount must match |
-|   |   | Message value higher than fee per asset * mint amount |
+|   |   | Message value higher than fee per asset |
 | mintCashCompliance | mintWithCash | Message value lower than sender balance |
-|   |   | Mint amount must match |
-|   |   | Cash balance higher than (cash per asset to burn + cash per asset fee) * mint amount |
+|   |   | Cash balance higher than (cash per asset to burn + cash per asset fee) |
 | mintFragmentCompliance | mintWithFragment | Message value lower than sender balance |
 |   |   | Rarity in range ( >= 0) |
 |   |   | Rarity in range ( <= 4) |
-|   |   | Message value higher that fee per asset * mint amount |
 |   |   | Balance of fragments enough to fusion |
 | isAsset | getStatsURI | Id in range ( > 0) |
 |   |  mintWithFragment | Id in range ( < 6) |
@@ -59,3 +55,13 @@ The following modifiers are implemented:
 | getStatsURI | uint256 _tokenRarity | isAsset | Get URI to basic stats values |
 | getURI | string _newURI |   | Get general token URI |
 | tokenURI | uint256 _qId |   | Get general token URI |
+
+### Minting functions
+
+| Name | Params | Modifier | Fuction | 
+| --- | --- | --- |--- |
+| mintOwner | uint256 id, uint256 amount | onlyOwner | Mint specified token with specified amount to owner |
+| mintFromOwnerTo | address to, uint256 id, uint256 amount | onlyOwner | Mint specified token with specified amount to other address |
+| mintWithNative |   | mintNativeCompliance | Mint random rarity asset for native fee |
+| mintWithFragment | uint256 _tokenRarity | isAsset mintFragmentCompliance | Mint specified rarity asset for native fee |
+| mintWithCash |   | mintCashCompliance | Mint random rarity asset for native fee |
