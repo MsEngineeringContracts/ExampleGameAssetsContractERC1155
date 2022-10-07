@@ -84,20 +84,45 @@ The following modifiers are implemented:
 ## Proof of functionality
 ### Contract Creation
 
+Contract Address:
+0x7975A3B87f2986f42993e5De201089DCAfD3Eeff
+https://testnet.bscscan.com/address/0x7975a3b87f2986f42993e5de201089dcafd3eeff
+
+TX hash contract creation:
+0xe85e1db9eee8b2e2448376d3dd0606558ff27ea748ec37e0e7ad0751b863903b
+https://testnet.bscscan.com/tx/0xe85e1db9eee8b2e2448376d3dd0606558ff27ea748ec37e0e7ad0751b863903b
+
 ![ScreenShot](/img/TestGfnIcoDice_TX_ContractCreation.PNG)
 
 ### Metadata and statsURI
 
+Token URI returns link with replaceable id:
+
+![ScreenShot](/img/TestGfnIcoDice_TokenURI.PNG)
+
+Stats URI function returns a link to the json file which contains the stats object.
+
 ![ScreenShot](/img/TestGfnIcoDice_StatsURI.PNG)
 
+
+
 ### Mint with native
+
+Native mint via mint function:
 
 ![ScreenShot](/img/TestGfnIcoDice_TX_MintWithNative.PNG)
 
 ### Mint with cash
 
+Mint with token 0 from ERC1155 contract:
+
 ![ScreenShot](/img/TestGfnIcoDice_TX_MintWithCash.PNG)
 
 ### Mint with fragment
 
+Mint with specific rarity fragments:
+
 ![ScreenShot](/img/TestGfnIcoDice_TX_MintWithFragments.PNG)
+
+### Mint on ether receive
+
