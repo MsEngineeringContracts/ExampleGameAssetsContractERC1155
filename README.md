@@ -126,3 +126,8 @@ Mint with specific rarity fragments:
 
 ### Mint on ether receive
 
+Mint by sending the fee in ether directly to the contract:
+
+![ScreenShot](/img/TestGfnIcoDice_TX_MintWithEtherTransaction.PNG)
+
+![ScreenShot](/img/TestGfnIcoDice_TXdetails_MintWithEtherTransaction.PNG)
