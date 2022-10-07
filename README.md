@@ -46,3 +46,8 @@ The following modifiers are implemented:
 | isFragment |  | Id in range ( > 5) |
 
 ### Maintenance functions
+
+| Name | Params | Modifier | Fuction | 
+| --- | --- | --- |--- |
+| setBaseStatsURI | string _newURI | onlyOwner | Set URI to basic stats values |
+| setBaseStatsURI | string _newURI | onlyOwner | Set URI to basic stats values |
