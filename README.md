@@ -24,3 +24,25 @@ The values defined are just an example to represent some ideas of mechanics in t
 | _FusionAssetDefaultCharge | The number of assets to mint when fusioning an asset. | 10 |
 
 ### Modifier
+The following modifiers are implemented:
+
+| Name | Calls | Requirements | 
+| --- | --- | --- |
+| mintNativeCompliance | mintWithNative | Message value lower than sender balance |
+|   |   | Mint amount must match |
+|   |   | Message value higher than fee per asset * mint amount |
+| mintCashCompliance | mintWithCash | Message value lower than sender balance |
+|   |   | Mint amount must match |
+|   |   | Cash balance higher than (cash per asset to burn + cash per asset fee) * mint amount |
+| mintFragmentCompliance | mintWithFragment | Message value lower than sender balance |
+|   |   | Rarity in range ( >= 0) |
+|   |   | Rarity in range ( <= 4) |
+|   |   | Message value higher that fee per asset * mint amount |
+|   |   | Balance of fragments enough to fusion |
+| isAsset | getStatsURI | Id in range ( > 0) |
+|   |  mintWithFragment | Id in range ( < 6) |
+| isCash |  | Id in range ( == 0) |
+| isFragment |  | Id in range ( < 11) |
+| isFragment |  | Id in range ( > 5) |
+
+### Maintenance functions
