@@ -22,6 +22,14 @@ The values defined are just an example to represent some ideas of mechanics in t
 | _CashPerAssetToBurn | The number of cash to burn, to mint a random asset. | 100 |
 | _CashPerAssetFee | The number of cash to pay to the owner, to mint a random asset. | 10 |
 
+### Constructor, receive, fallback and withdraw
+
+Additional to the contract creation the consturctor mints specified default amount of each token to the owner wallet. 
+
+Further it needs the default functions receive and fallback to handle incoming ether or other transactions. The receive function checks if the message value is bigger than the fee per asset. If this requirement is met, a random asset is minted to the message sender.
+
+The withdraw function is necessary to withdraw the ether in the contract to the owner wallet.
+
 ### Modifier
 The following modifiers are implemented:
 
@@ -65,3 +73,10 @@ The following modifiers are implemented:
 | mintWithNative |   | mintNativeCompliance | Mint random rarity asset for native fee |
 | mintWithFragment | uint256 _tokenRarity | isAsset mintFragmentCompliance | Mint specified rarity asset for native fee |
 | mintWithCash |   | mintCashCompliance | Mint random rarity asset for native fee |
+
+### Other functions
+
+| Name | Params | Modifier | Fuction | 
+| --- | --- | --- | --- |
+| _createRandomNum | uint256 _mod |   | Returns random number in the specified mod range |
+| burn | address from, uint256 id, uint256 amount |   | Returns random number in the specified mod range |
