@@ -1,6 +1,8 @@
 # ExampleGameAssetsContractERC1155
 Example game asset contract with in game currency, buy function, rartity based status values and fragments to mint the game asset.
 
+The metadata uploads were updated for the tutorial after the contract creation, so addresses or links could be obsolete.
+
 ## Requirements
 ### Require 00
 A contract workspace according to previous examples.
